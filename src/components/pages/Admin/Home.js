@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouteMatch } from "react-router-dom";
-import { FaPaperPlane, FaPlus, FaSearch } from "react-icons/fa";
+import { FaUserFriends, FaPaperPlane, FaPlus, FaSearch } from "react-icons/fa";
 
 import Container from "../../atoms/Container";
 import Text from "../../atoms/Text";
@@ -117,6 +117,9 @@ const Home = () => {
           <List>
             <ListItem bg="bg" icon={<FaPlus />} to={`${url}/bank`}>
               Bank Details
+            </ListItem>
+            <ListItem bg="bg" icon={<FaUserFriends />} to={`${url}/staff`}>
+              Staff List
             </ListItem>
           </List>
         </Container>
